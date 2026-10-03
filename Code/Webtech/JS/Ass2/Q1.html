@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array</title>
+   <style>
+    p{
+        background-color: aliceblue;
+    }
+    span{
+        background-color: skyblue;
+    }
+   </style>
+</head>
+<body>
+    <h2>Array of Colors</h2>
+    <p>Original Array of Colors: <span id="c"></span></p>
+    <p>Second Element of array: <span id="ashoka"></span></p>
+    <p>Final Array of Colors: <span id="ashoka1"></span></p>
+    <script>
+        var colors =["green", "blue", "orange", "red"];
+        document.getElementById("c").innerHTML= colors;
+        document.getElementById("ashoka").innerHTML = colors[1];
+        colors.splice(2,0,"yellow","brown");
+        document.getElementById("ashoka1").innerHTML = colors;
+    </script>
+</body>
+</html>

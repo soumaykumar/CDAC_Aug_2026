@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<header>
+    <h1>CDAC</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+<div class="container">
+    <h2>Student Registration Form</h2>
+    <form name="RegistrationForm" onsubmit="return ValidateForm();">
+        <p>Student Name:
+            <input type="text" name="Name" id="name">
+        </p>
+        <p>Email:
+            <input type="text" name="Email" id="email">
+        </p>
+        <p>Mobile Number:
+            <input type="text" name="Mobile" id="mobile">
+        </p>
+        <p>Date of Birth:
+            <input type="date" name="DOB" id="dob">
+        </p>
+        <p>Gender:
+            <input type="radio" name="Gender" value="Male"> Male
+            <input type="radio" name="Gender" value="Female"> Female
+        </p>
+        <p>Course:
+            <select name="Course" id="course">
+                <option value="">Please Choose</option>
+                <option value="PG-DAC">PG-DAC</option>
+                <option value="PG-DBDA">PG-DBDA</option>
+                <option value="PG-DAI">PG-DAI</option>
+                <option value="PG-VLSI">PG-VLSI</option>
+            </select>
+        </p>
+        <p>Address:
+            <textarea name="Address" id="address"></textarea>
+        </p>
+        <p>Password:
+            <input type="password" name="Password" id="password">
+        </p>
+        <p>Confirm Password:
+            <input type="password" name="ConfirmPassword" id="confirmPassword">
+        </p>
+        <p id="message"></p>
+        <input type="submit" value="Register" class="button">
+        <input type="reset" value="Reset" class="button">
+    </form>
+</div>
+</body>
+</html>

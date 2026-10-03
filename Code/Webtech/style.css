@@ -1,0 +1,79 @@
+body{
+    font-family:Arial;
+    margin:15px;
+    background-color:white;
+}
+header{
+    background-color:white;
+    padding:5px;
+    border-bottom:1px solid black;
+}
+header h1{
+    color:black;
+    font-size:24px;
+    margin:5px 0;
+}
+nav{
+    margin:10px 0;
+}
+nav a{
+    color:black;
+    margin-right:20px;
+    text-decoration:none;
+}
+.container{
+    width:650px;
+    margin:20px 0;
+    padding:10px;
+    background-color:#eef7fc;
+    border:1px solid #aaa;
+    box-sizing:border-box;
+}
+h2{
+    font-size:18px;
+    margin:5px 0 15px 0;
+    color:black;
+    text-align:left;
+}
+p{
+    margin:10px 0;
+    font-size:14px;
+}
+input[type="text"],
+input[type="date"],
+input[type="password"],
+select{
+    padding:3px;
+    border:1px solid #999;
+    border-radius:2px;
+    font-size:13px;
+}
+input[type="text"],
+input[type="password"]{
+    width:270px;
+}
+
+input[type="date"]{
+    width:150px;
+}
+select{
+    width:150px;
+}
+textarea{
+    width:300px;
+    height:50px;
+    border:1px solid #999;
+    padding:3px;
+}
+input[type="radio"]{
+    margin-left:5px;
+}
+.button{
+    padding:3px 8px;
+    margin-right:5px;
+    font-size:13px;
+}
+#message{
+    font-size:14px;
+    text-align:left;
+}

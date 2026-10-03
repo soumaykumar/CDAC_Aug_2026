@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Program</title>
+</head>
+<body>
+    <h2>Print Date</h2>
+    <p>CurrentDate:<span id="d"></span></p>
+    <p>Number of Milliseconds till date:<span id="msec"></span></p>
+    <p>Year:<span id="year"></span></p>
+    <p>Day:<span id="day"></span></p>
+    <script>
+       var d= new Date();
+       document.getElementById("d").innerHTML = d 
+       document.getElementById("msec").innerHTML = d.getTime();
+       document.getElementById("year").innerHTML = d.getFullYear();
+       document.getElementById("day").innerHTML = d.getDay();
+    </script>
+</body>
+</html>

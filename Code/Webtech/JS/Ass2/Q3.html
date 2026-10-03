@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Form Validation Example</title>
+<style>
+    fieldset{
+        background-color: aliceblue;
+    }
+    input[type=text]{
+        background-color: skyblue;
+    }
+    select{
+        text-decoration-color: blue;
+    }
+</style>
+<script>
+function ValidateStudentForm()
+{
+    var name = document.StudentForm.Name;
+    var roll = document.StudentForm.Roll;
+    var center = document.StudentForm.Center;
+    var phone = document.StudentForm.Telephone;
+    var email = document.StudentForm.Email;
+    var file = document.StudentForm.File;
+    if (name.value == "")
+    {
+        window.alert("Please enter your name.");
+        name.focus();
+        return false;
+    }
+    if (!/^[a-zA-Z]+$/.test(name.value))
+    {
+        window.alert("Name should contain only alphabets.");
+        name.focus();
+        return false;
+    }
+    if (roll.value == "")
+    {
+        window.alert("Please enter roll number.");
+        roll.focus();
+        return false;
+    }
+    if (!/^[a-zA-Z0-9]+$/.test(roll.value))
+    {
+        window.alert("Roll number should contain only alphanumeric characters.");
+        roll.focus();
+        return false;
+    }
+    if (center.selectedIndex < 1)
+    {
+        window.alert("Please select an exam center.");
+        center.focus();
+        return false;
+    }
+    if (phone.value == "")
+    {
+        window.alert("Please enter telephone number.");
+        phone.focus();
+        return false;
+    }
+    if (!/^[0-9]{10}$/.test(phone.value))
+    {
+        window.alert("Telephone number must contain exactly 10 digits.");
+        phone.focus();
+        return false;
+    }
+    if (email.value == "")
+    {
+        window.alert("Please enter email address.");
+        email.focus();
+        return false;
+    }
+
+    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email.value))
+    {
+        window.alert("Please enter a valid email address.");
+        email.focus();
+        return false;
+    }
+    if (file.value == "")
+    {
+        window.alert("Please upload a file.");
+        file.focus();
+        return false;
+    }
+    if (!/\.(doc|pdf)$/i.test(file.value))
+    {
+        window.alert("Only DOC or PDF files are allowed.");
+        file.focus();
+        return false;
+    }
+    window.alert("Form submitted successfully!");
+    return true;
+}
+</script>
+</head>
+<body>
+<div>
+<form name="StudentForm" onsubmit="return ValidateStudentForm();">
+<h2>Please fill the form:</h2>
+<fieldset>
+<legend>
+<h3>Student Information</h3>
+</legend>
+<p>Name:<input type="text" size="50" name="Name"></p>
+<p>Roll Number:<input type="text" size="50" name="Roll"></p>
+<p>Exam Center:
+<select name="Center">
+    <option>Please Choose</option>
+    <option>Delhi</option>
+    <option>Noida</option>
+    <option>Pune</option>
+    <option>Bangalore</option>
+</select></p>
+<p>Telephone:<input type="text" size="50" name="Telephone"></p>
+<p>Email:<input type="text" size="50" name="Email"></p>
+<p>Upload File:<input type="file" name="File"></p>
+<p><input type="submit" value="Submit" name="submit">
+<input type="reset" value="Reset" name="reset"></p>
+</fieldset>
+</form>
+</div>
+</body>
+</html>

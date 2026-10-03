@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timetable</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgray;
+        }
+        tr:nth-child(odd){
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+<h2 align="center">Daily Timetable</h2>
+<table>
+    <tr>
+        <th rowspan="2">Time</th>
+        <th colspan="5">Days</th>
+    </tr>
+    <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+    </tr>
+    <tr>
+        <th>9:30 AM - 1:00 PM</th>
+        <td colspan="5">Theory Class</td>
+    </tr>
+    <tr>
+        <th>1:00 PM - 2:15 PM</th>
+        <td colspan="5">Lunch Break</td>
+    </tr>
+    <tr>
+        <th>2:15 PM - 6:00 PM</th>
+        <td colspan="5">Lab</td>
+    </tr>
+</table>
+</body>
+</html>

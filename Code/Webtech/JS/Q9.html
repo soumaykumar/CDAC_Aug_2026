@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Check</title>
+</head>
+<body>
+    <p style="font-weight: bold;">Enter Number:</p>
+    <input style="background-color: darkgoldenrod;"type="text" id="num">
+    <button style="background-color: gold;"onclick="checkNumber()">Check</button>
+    <script>
+        function checkNumber(){
+            let n=document.getElementById("num").value;
+            if(n<1 || n>10 || n==""){
+                alert("input is not ok");
+            }
+        }
+    </script>
+</body>
+</html>

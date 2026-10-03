@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Details</title>
+</head>
+<style>
+    div{
+        background-color: lightgray;
+        border-radius: 10px;
+        padding: 20px 10px;
+    }
+    input[type=text],select{
+        width:100%;
+        margin-bottom: 10px;
+    }
+    input[type=submit]{
+        width:100%;
+        background-color:green;
+        padding: 10px 20px
+    }
+</style>
+<body>
+    <h3>Using CSS to Style an HTML Form</h3>
+    <div>
+        <form>
+           <label for="firstname">First Name</label><br>
+           <input type="text" id="name" name="firstname" placeholder="Your name...">
+           <label for="lastname">First Name</label><br>
+           <input type="text" id="name" name="lastname" placeholder="Your last name...">
+           <label for="ctry">Country</label>
+           <select name="ctry" id="ctry">
+           <option value="India">India</option>
+           <option value="USA">USA</option>
+           <option value="UK">UK</option>
+           <option value="Africa">Africa</option><br>
+           </select>
+           <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
